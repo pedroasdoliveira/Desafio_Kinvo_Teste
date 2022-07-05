@@ -1,12 +1,14 @@
 import styled, { css } from "styled-components";
 
-export const Header = styled.header`
+export const Header = styled.main`
   ${() => css`
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: #fff;
     border: 1px solid #f4f5f9;
+    cursor: default;
+    width: 100vw;
   `}
 `;
 
@@ -15,6 +17,7 @@ export const HeaderLogo = styled.img`
     width: 190px;
     height: auto;
     margin: 1.2rem;
+    cursor: pointer;
   `}
 `;
 
@@ -51,6 +54,7 @@ export const HeaderImg = styled.img`
     ${() => css`
         width: 30px;
         height: auto;
+        cursor: pointer;
     `}
 `
 

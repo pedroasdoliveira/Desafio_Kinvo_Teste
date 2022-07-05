@@ -5,11 +5,18 @@ import Arrow from '../../assets/icon/arrow-up.svg'
 import Stoke from '../../assets/icon/stoke.svg'
 import ArrowDown from '../../assets/icon/arrow-down.svg'
 import Menu from '../../assets/icon/menu.svg'
+import { useNavigate } from "react-router-dom";
 
 const Header = () => {
+  const navigate = useNavigate()
+
+  const handleClick = () => {
+    navigate('/')
+  }
+
   return (
     <Style.Header>
-     <Style.HeaderLogo src={Logo} alt='' />
+     <Style.HeaderLogo onClick={handleClick} src={Logo} alt='' />
 
      <Style.HeaderSection>
 

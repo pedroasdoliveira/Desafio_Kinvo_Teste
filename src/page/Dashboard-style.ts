@@ -6,7 +6,22 @@ export const Dashboard = styled.div`
         min-width: 100vw;
         min-height: 100vh;
         display: flex;
-        flex-direction: column;
-        margin: 0;
+        flex-direction: row;
+        flex-wrap: wrap;
     ` }
 `;
+
+export const AsideDashboard = styled.aside`
+    ${() => css`
+        display: flex;
+        max-width: 225px;
+        max-height: 100vh;
+    `}
+`;
+
+export const MainDashboard = styled.main`
+    ${() => css`
+        display: flex;
+        width: 82%;
+    `}
+`
